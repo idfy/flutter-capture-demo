@@ -4,14 +4,8 @@
 <dict>
 	<key></key>
 	<string></string>
-	<key>NSAllowsArbitraryLoads</key>
-	<true/>
 	<key>AllowsInlineMediaPlayback</key>
 	<true/>
-	<key>io.flutter.embedded_views_preview</key>
-	<true/>
-	<key>MediaPlaybackRequiresUserAction</key>
-	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -36,6 +30,10 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MediaPlaybackRequiresUserAction</key>
+	<false/>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>For video calls and photo capture</string>
 	<key>NSLocationUsageDescription</key>
@@ -55,15 +53,15 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
 </dict>
 </plist>

@@ -242,12 +242,19 @@ class _URLLauncherPageState extends State<URLLauncherPage> {
     try {
       await custom_tabs.launchUrl(
         Uri.parse(url),
+        prefersDeepLink: false,
         customTabsOptions: custom_tabs.CustomTabsOptions(
           colorSchemes: custom_tabs.CustomTabsColorSchemes.defaults(
             toolbarColor: Theme.of(context).primaryColor,
           ),
           urlBarHidingEnabled: true,
           showTitle: true,
+        ),
+        safariVCOptions: const custom_tabs.SafariViewControllerOptions(
+          barCollapsingEnabled: true,
+          entersReaderIfAvailable: false,
+          dismissButtonStyle:
+              custom_tabs.SafariViewControllerDismissButtonStyle.close,
         ),
       );
     } catch (e) {
